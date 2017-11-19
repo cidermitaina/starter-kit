@@ -1,0 +1,30 @@
+@charset "utf-8";
+.cr {
+    cursor: default;
+}
+.fade {
+    @include fade;
+}
+.bgcolor_none{
+    background-color: transparent !important;
+}
+.no_breadcrumbsIcon:after{
+    content: "" !important;
+    display: inline-block;
+    margin: 0 5px;
+}
+.cf:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+ /* IE6 */
+* html .cf { zoom:1;}
+ /* IE7 */
+*:first-child+html .cf {zoom:1;}
+.noBorder {
+    border: none !important;
+}

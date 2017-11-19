@@ -1,0 +1,373 @@
+@charset "UTF-8";
+/*init*/
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block; }
+
+ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs
+*/
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/*lib*/
+/**
+ * define valiables
+ * 各scssファイルでよく使う値を変数定義
+ */
+/**
+ * easing
+ */
+/**
+ * function
+ * 値を返す
+ */
+/**
+ * mixins
+ * ブロックを返す
+ */
+/*
+デバイス定義
+ */
+/*
+スマホの文字指定専用（横幅640px想定）
+font-sizeにvwを設定
+ */
+/*
+clearfix
+ */
+/*
+iOS smooth scroll
+ */
+/*
+opacity
+ */
+/*
+fade
+ */
+/**
+ * initiallize
+ * タグ自体のstyleを記述
+ */
+html {
+  font-family: "YuGothic", "游ゴシック", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", "ヒラギノ丸ゴ Pro W4", "Hiragino Maru Gothic Pro", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+  color: #464646;
+  word-wrap: break-word;
+  font-size: 14px; }
+
+body {
+  width: 100%;
+  height: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+a {
+  text-decoration: none;
+  color: #01499d; }
+  a:hover {
+    text-decoration: none; }
+
+img {
+  vertical-align: bottom; }
+
+strong {
+  font-weight: bold; }
+
+input {
+  padding: 0;
+  border: none;
+  background: none; }
+
+input[type=text],
+input[type=tel],
+input[type=password],
+input[type=email],
+input[type=search],
+input[type=url],
+input[type=datetime],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=datetime-local],
+input[type=number],
+select,
+textarea {
+  padding: 6px;
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", "ヒラギノ丸ゴ Pro W4", "Hiragino Maru Gothic Pro", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+  background-color: #fff;
+  border: solid 1px #c9c9c9;
+  vertical-align: bottom; }
+  input[type=text]::-webkit-input-placeholder,
+  input[type=tel]::-webkit-input-placeholder,
+  input[type=password]::-webkit-input-placeholder,
+  input[type=email]::-webkit-input-placeholder,
+  input[type=search]::-webkit-input-placeholder,
+  input[type=url]::-webkit-input-placeholder,
+  input[type=datetime]::-webkit-input-placeholder,
+  input[type=date]::-webkit-input-placeholder,
+  input[type=month]::-webkit-input-placeholder,
+  input[type=week]::-webkit-input-placeholder,
+  input[type=time]::-webkit-input-placeholder,
+  input[type=datetime-local]::-webkit-input-placeholder,
+  input[type=number]::-webkit-input-placeholder,
+  select::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    color: #e2e2e2; }
+  input[type=text]:-ms-input-placeholder,
+  input[type=tel]:-ms-input-placeholder,
+  input[type=password]:-ms-input-placeholder,
+  input[type=email]:-ms-input-placeholder,
+  input[type=search]:-ms-input-placeholder,
+  input[type=url]:-ms-input-placeholder,
+  input[type=datetime]:-ms-input-placeholder,
+  input[type=date]:-ms-input-placeholder,
+  input[type=month]:-ms-input-placeholder,
+  input[type=week]:-ms-input-placeholder,
+  input[type=time]:-ms-input-placeholder,
+  input[type=datetime-local]:-ms-input-placeholder,
+  input[type=number]:-ms-input-placeholder,
+  select:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    color: #e2e2e2; }
+  input[type=text]::-moz-placeholder,
+  input[type=tel]::-moz-placeholder,
+  input[type=password]::-moz-placeholder,
+  input[type=email]::-moz-placeholder,
+  input[type=search]::-moz-placeholder,
+  input[type=url]::-moz-placeholder,
+  input[type=datetime]::-moz-placeholder,
+  input[type=date]::-moz-placeholder,
+  input[type=month]::-moz-placeholder,
+  input[type=week]::-moz-placeholder,
+  input[type=time]::-moz-placeholder,
+  input[type=datetime-local]::-moz-placeholder,
+  input[type=number]::-moz-placeholder,
+  select::-moz-placeholder,
+  textarea::-moz-placeholder {
+    color: #e2e2e2; }
+  input[type=text]:focus,
+  input[type=tel]:focus,
+  input[type=password]:focus,
+  input[type=email]:focus,
+  input[type=search]:focus,
+  input[type=url]:focus,
+  input[type=datetime]:focus,
+  input[type=date]:focus,
+  input[type=month]:focus,
+  input[type=week]:focus,
+  input[type=time]:focus,
+  input[type=datetime-local]:focus,
+  input[type=number]:focus,
+  select:focus,
+  textarea:focus {
+    background-color: #eef4fb; }
+
+input[type=radio],
+input[type=checkbox] {
+  margin: 0;
+  vertical-align: -1px; }
+
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  cursor: pointer;
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", "ヒラギノ丸ゴ Pro W4", "Hiragino Maru Gothic Pro", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+  vertical-align: bottom; }
+
+textarea {
+  resize: vertical;
+  vertical-align: bottom; }
+
+em {
+  font-style: italic; }
+
+sup {
+  vertical-align: super; }
+
+sub {
+  vertical-align: sub; }
+
+blockquote {
+  background-color: #EEEFFF;
+  padding: 1em 1em 1em 3em;
+  position: relative;
+  border-left: 3px solid #666; }
+
+blockquote:before {
+  content: "“";
+  font-size: 600%;
+  line-height: 1em;
+  color: #999;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+::-moz-selection {
+  background: #d4dcd6;
+  /* Safari */ }
+
+::selection {
+  background: #d4dcd6;
+  /* Safari */ }
+
+::-moz-selection {
+  background: #d4dcd6;
+  /* Firefox */ }
+
+.pci {
+  display: inline; }
+  @media print, screen and (max-width: 640px) {
+    .pci {
+      display: none; } }
+
+.spi {
+  display: none; }
+  @media print, screen and (max-width: 640px) {
+    .spi {
+      display: inline; } }
+
+.pc {
+  display: block; }
+  @media print, screen and (max-width: 640px) {
+    .pc {
+      display: none; } }
+
+.sp {
+  display: none; }
+  @media print, screen and (max-width: 640px) {
+    .sp {
+      display: block; } }
+
+.cr {
+  cursor: default; }
+
+.fade {
+  transition: opacity 0.1s ease-in-out 0s; }
+  .fade:hover {
+    opacity: 0.7; }
+
+.bgcolor_none {
+  background-color: transparent !important; }
+
+.no_breadcrumbsIcon:after {
+  content: "" !important;
+  display: inline-block;
+  margin: 0 5px; }
+
+.cf:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+/* IE6 */
+* html .cf {
+  zoom: 1; }
+
+/* IE7 */
+*:first-child + html .cf {
+  zoom: 1; }
+
+.noBorder {
+  border: none !important; }
+
+/*parts*/
+/*elements*/
+header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+h1 {
+  font-size: 15px;
+  padding: 200px 2px 300px;
+  text-align: center; }
+
+.wrapper {
+  width: 30%;
+  margin: 2% auto; }
+  @media print, screen and (max-width: 640px) {
+    .wrapper {
+      width: 95%; } }

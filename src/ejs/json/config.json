@@ -1,0 +1,16 @@
+{
+    "meta":[
+        {
+            "page1":"description1",
+            "page2":"description2"
+        },
+        {
+            "page1":"key1,key1,key1",
+            "page2":"key2,key2,key2"
+        },
+        {
+            "page1":"og:description1",
+            "page2":"og:description2"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+@import "_common";
+h1{
+    font-size: 15px;
+    padding: 200px 2px 300px;
+    text-align: center;
+}
+.wrapper{
+    width: 30%;
+    margin: 2% auto;
+    @include sp{
+        width: 95%;
+    }
+}
