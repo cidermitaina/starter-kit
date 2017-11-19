@@ -6,9 +6,9 @@ html5 starter-kit
 html5 starter-kit 作成。
 
 ### 使用言語
-・ejs　→　HTML
-・Sass　→　CSS
-・javaScript（ES6)
+- ejs　→　HTML
+- Sass　→　CSS
+- javaScript（ES6)
 
 ### 環境構築
 
